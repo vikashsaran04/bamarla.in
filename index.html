@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="hi" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bamarla.in | बामरला गांव (बाड़मेर)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter & Noto Sans Devanagari) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        rajasthan: {
+                            gold: '#F59E0B',
+                            terracotta: '#E11D48',
+                            sand: '#D97706',
+                            deep: '#0F172A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans Devanagari', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 4s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        glow: {
+                            '0%': { opacity: '0.4', filter: 'blur(20px)' },
+                            '100%': { opacity: '0.8', filter: 'blur(30px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #0b0f19;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* Modern Glassmorphism effect */
+        .glass-card {
+            background: rgba(30, 41, 59, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .glass-badge {
+            background: rgba(245, 158, 11, 0.15);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        /* Gradient background blur shapes */
+        .bg-blob-1 {
+            background: radial-gradient(circle, rgba(225, 29, 72, 0.35) 0%, rgba(0,0,0,0) 70%);
+        }
+        .bg-blob-2 {
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.3) 0%, rgba(0,0,0,0) 70%);
+        }
+        .bg-blob-3 {
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.25) 0%, rgba(0,0,0,0) 70%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between relative selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- Ambient Animated Background Lights -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-blob-1 animate-glow rounded-full"></div>
+        <div class="absolute top-1/2 -right-32 w-[500px] h-[500px] bg-blob-2 animate-glow rounded-full" style="animation-delay: 2s;"></div>
+        <div class="absolute -bottom-32 left-1/3 w-96 h-96 bg-blob-3 animate-glow rounded-full" style="animation-delay: 4s;"></div>
+        <!-- Grid Overlay Pattern -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:3rem_3rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+    </div>
+
+    <!-- Header Navigation Bar -->
+    <header class="relative z-10 w-full px-4 sm:px-8 py-5 border-b border-slate-800/80 backdrop-blur-md bg-slate-950/40">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <!-- Brand / Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-rose-600 flex items-center justify-center text-slate-950 font-bold text-xl shadow-lg shadow-amber-500/20">
+                    B
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                        bamarla.in
+                        <span class="text-xs font-normal px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                            Reserved
+                        </span>
+                    </h1>
+                    <p class="text-xs text-slate-400">ग्राम बामरला, बाड़मेर (राजस्थान)</p>
+                </div>
+            </div>
+
+            <!-- Live IST Clock -->
+            <div class="flex items-center gap-3 bg-slate-900/80 border border-slate-800 rounded-full px-4 py-1.5 text-xs text-slate-300">
+                <i class="fa-regular fa-clock text-amber-400"></i>
+                <span id="ist-clock">IST: --:--:-- PM</span>
+                <span class="text-slate-600">|</span>
+                <span class="text-slate-400">Barmer, RJ</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="relative z-10 flex-grow flex items-center justify-center px-4 py-12 sm:py-16">
+        <div class="max-w-4xl w-full">
+            
+            <!-- Main Glass Card -->
+            <div class="glass-card rounded-3xl p-6 sm:p-10 md:p-12 relative overflow-hidden transition-all duration-300">
+                
+                <!-- Rajasthan Decorative Wave Pattern Border Top -->
+                <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-500 via-rose-500 to-amber-500"></div>
+
+                <!-- Top Status Badges -->
+                <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-8">
+                    <span class="glass-badge text-amber-300 text-xs sm:text-sm font-medium px-3.5 py-1.5 rounded-full flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-amber-400"></i>
+                        आधिकारिक गांव डोमेन (Official Village Domain)
+                    </span>
+                    <span class="bg-rose-500/10 border border-rose-500/20 text-rose-300 text-xs sm:text-sm font-medium px-3.5 py-1.5 rounded-full flex items-center gap-2">
+                        <i class="fa-solid fa-person-digging text-rose-400 animate-pulse"></i>
+                        Under Construction
+                    </span>
+                </div>
+
+                <!-- Hero Section Heading -->
+                <div class="text-center sm:text-left mb-10">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+                        यह डोमेन <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-rose-500">बामरला गांव</span> के नाम पर सुरक्षित (Reserved) है।
+                    </h2>
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+                        Official Domain Portal for <strong class="text-white font-semibold">Bamarla Village (Barmer, Rajasthan)</strong>. गांव की आधिकारिक वेबसाइट की तैयारी चल रही है। 
+                    </p>
+                </div>
+
+                <!-- Status Progress Banner -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 mb-10 backdrop-blur-sm">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
+                        <div class="flex items-center gap-2 text-sm font-medium text-amber-400">
+                            <i class="fa-solid fa-spinner animate-spin"></i>
+                            वेबसाइट निर्माण कार्य प्रगति पर है (Development In Progress)
+                        </div>
+                        <span class="text-xs text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md self-start sm:self-auto">Status: 35% Completed</span>
+                    </div>
+                    <!-- Progress Bar -->
+                    <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-amber-500 to-rose-500 h-2 rounded-full w-1/3 transition-all duration-1000"></div>
+                    </div>
+                </div>
+
+                <!-- Urgent Contact Section / Contact Card -->
+                <div class="mt-8 pt-8 border-t border-slate-800">
+                    <h3 class="text-sm font-semibold uppercase tracking-wider text-amber-400 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        किसी भी जरूरी कार्य / पूछताछ के लिए संपर्क करें
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-400 mb-6">
+                        For any urgent inquiries, village matters, or official administrative discussion:
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        
+                        <!-- Contact Person Detail Box -->
+                        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition-all">
+                            <div class="flex items-start justify-between mb-3">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-xl font-bold">
+                                        <i class="fa-solid fa-user-shield"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400">डोमेन प्रतिनिधि / Contact Person</div>
+                                        <div class="text-lg font-bold text-white">विकास कुमार (Vikash Kumar)</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between">
+                                <div class="flex items-center gap-2 text-slate-300 text-sm">
+                                    <i class="fa-solid fa-phone text-emerald-400"></i>
+                                    <span class="font-mono text-base font-semibold text-white">+91 8529326036</span>
+                                </div>
+                                <div class="flex gap-1.5">
+                                    <a href="tel:8529326036" class="p-2 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs transition" title="Call Now">
+                                        <i class="fa-solid fa-phone-flip"></i> Call
+                                    </a>
+                                    <button onclick="copyToClipboard('8529326036', 'फ़ोन नंबर कॉपी हो गया!')" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 text-xs transition" title="Copy Number">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email Contact Box -->
+                        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition-all flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 text-xl">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400">ईमेल आईडी / Official Email</div>
+                                        <div class="text-sm font-semibold text-white break-all">vikashkumar823981@gmail.com</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email Actions -->
+                            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between">
+                                <span class="text-xs text-slate-400">Send Direct Mail</span>
+                                <div class="flex gap-1.5">
+                                    <a href="mailto:vikashkumar823981@gmail.com" class="px-3 py-1.5 rounded-lg bg-rose-500/10 hover:bg-rose-500/20 text-rose-400 border border-rose-500/30 text-xs transition flex items-center gap-1.5">
+                                        <i class="fa-solid fa-paper-plane"></i> Email
+                                    </a>
+                                    <button onclick="copyToClipboard('vikashkumar823981@gmail.com', 'ईमेल कॉपी हो गया!')" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 text-xs transition" title="Copy Email">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Action Buttons Bar -->
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <button onclick="openMessageModal()" class="flex-1 min-w-[200px] py-3.5 px-6 rounded-xl bg-gradient-to-r from-amber-500 to-rose-600 hover:from-amber-600 hover:to-rose-700 text-slate-950 font-bold text-sm shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2 transition duration-200">
+                            <i class="fa-solid fa-message"></i>
+                            डायरेक्ट मैसेज भेजें (Send Message)
+                        </button>
+
+                        <button onclick="copyAllContact()" class="py-3.5 px-6 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm border border-slate-700 flex items-center justify-center gap-2 transition duration-200">
+                            <i class="fa-solid fa-share-nodes text-amber-400"></i>
+                            संपर्क जानकारी कॉपी करें
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Village Info Footer Badge -->
+            <div class="mt-8 text-center text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-center gap-3">
+                <span><i class="fa-solid fa-location-dot text-rose-500"></i> ग्राम बामरला, तहसील व जिला बाड़मेर (राजस्थान)</span>
+                <span class="hidden sm:inline">•</span>
+                <span>Pin Code: 344001 (approx)</span>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 w-full py-6 px-4 border-t border-slate-800/80 bg-slate-950/60 text-center text-xs text-slate-400">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div>
+                © <span id="year"></span> <strong class="text-slate-300">bamarla.in</strong> — ऑल राइट्स रिजर्व्ड (Reserved for Bamarla Village)
+            </div>
+            <div class="text-slate-500">
+                Managed by <span class="text-slate-400">Vikash Kumar</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Direct Message Modal (Interactive Popup) -->
+    <div id="messageModal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md hidden p-4">
+        <div class="glass-card max-w-md w-full rounded-2xl p-6 relative border border-slate-700 shadow-2xl animate-float">
+            
+            <button onclick="closeMessageModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg w-8 h-8 rounded-lg bg-slate-800/50 flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="mb-4">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-paper-plane text-amber-400"></i>
+                    संदेश भेजें (Direct Message)
+                </h3>
+                <p class="text-xs text-slate-400">यह मैसेज विकास कुमार को ईमेल या व्हाट्सप्प द्वारा भेजा जाएगा।</p>
+            </div>
+
+            <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-3">
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">आपका नाम (Your Name)</label>
+                    <input type="text" id="senderName" required placeholder="उदा. रमेश कुमार" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">फ़ोन नंबर (Phone Number)</label>
+                    <input type="tel" id="senderPhone" required placeholder="98XXXXXXXX" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">संदेश (Message)</label>
+                    <textarea id="senderMessage" rows="3" required placeholder="अपनी बात या काम का विवरण लिखें..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-500 resize-none"></textarea>
+                </div>
+
+                <div class="flex gap-2 pt-2">
+                    <button type="submit" class="w-full py-2.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm transition">
+                        <i class="fa-solid fa-envelope"></i> ईमेल खोलें
+                    </button>
+                    <button type="button" onclick="sendViaWhatsApp()" class="w-full py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition flex items-center justify-center gap-1.5">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> व्हाट्सएप
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification Toast Container -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 bg-slate-900 text-white border border-amber-500/40 px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div id="toastMessage" class="text-xs font-medium">संदेश कॉपी किया गया!</div>
+    </div>
+
+    <!-- Vanilla JavaScript Logic -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Live IST Clock function
+        function updateClock() {
+            const options = {
+                timeZone: 'Asia/Kolkata',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            };
+            const formatter = new Intl.DateTimeFormat('en-US', options);
+            document.getElementById('ist-clock').textContent = 'IST: ' + formatter.format(new Date());
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Clipboard Copy Helper with Toast Notification
+        function copyToClipboard(text, customMessage) {
+            // Fallback copy using textarea standard DOM method for iframe compatibility
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            showToast(customMessage || 'कॉपी कर लिया गया!');
+        }
+
+        // Copy All Contact Details
+        function copyAllContact() {
+            const allDetails = `bamarla.in (बामरला गांव - बाड़मेर)\nसंपर्क व्यक्ति: विकास कुमार (Vikash Kumar)\nमोबाइल: +91 8529326036\nईमेल: vikashkumar823981@gmail.com\nस्थिति: वेबसाइट कार्य प्रगति पर है (Under Construction)`;
+            copyToClipboard(allDetails, 'सभी संपर्क जानकारी कॉपी हो गई!');
+        }
+
+        // Toast Notification Trigger
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            toastMessage.textContent = msg;
+
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        // Contact Modal Controllers
+        function openMessageModal() {
+            document.getElementById('messageModal').classList.remove('hidden');
+        }
+
+        function closeMessageModal() {
+            document.getElementById('messageModal').classList.add('hidden');
+        }
+
+        // Submit form via mailto:
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('senderName').value;
+            const phone = document.getElementById('senderPhone').value;
+            const msg = document.getElementById('senderMessage').value;
+
+            const subject = encodeURIComponent(`bamarla.in Enquiry from ${name}`);
+            const body = encodeURIComponent(`नाम: ${name}\nफ़ोन: ${phone}\n\nसंदेश:\n${msg}`);
+
+            window.location.href = `mailto:vikashkumar823981@gmail.com?subject=${subject}&body=${body}`;
+            closeMessageModal();
+            showToast('ईमेल क्लाइंट खोला जा रहा है...');
+        }
+
+        // Send via WhatsApp directly
+        function sendViaWhatsApp() {
+            const name = document.getElementById('senderName').value || 'Visitor';
+            const phone = document.getElementById('senderPhone').value || 'Not provided';
+            const msg = document.getElementById('senderMessage').value || 'Hello Vikash Kumar, regarding bamarla.in';
+
+            const text = encodeURIComponent(`*bamarla.in - मैसेज*\n*नाम:* ${name}\n*फ़ोन:* ${phone}\n*संदेश:* ${msg}`);
+            window.open(`https://wa.me/918529326036?text=${text}`, '_blank');
+            closeMessageModal();
+            showToast('व्हाट्सएप खोला जा रहा है...');
+        }
+    </script>
+</body>
+</html>
