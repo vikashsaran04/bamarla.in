@@ -1,0 +1,16 @@
+{
+  "name": "बामरला ग्राम डिजिटल पोर्टल",
+  "short_name": "बामरला पोर्टल",
+  "description": "बामरला, बाड़मेर (राजस्थान) 344704 का स्वतंत्र डिजिटल ग्राम सूचना मंच।",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#F8F9FA",
+  "theme_color": "#002147",
+  "icons": [
+    {
+      "src": "/assets/images/logo.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    }
+  ]
+}

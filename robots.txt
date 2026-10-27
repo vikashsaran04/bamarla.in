@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bamarla-village-portal.in/sitemap.xml

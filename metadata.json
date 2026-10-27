@@ -1,0 +1,6 @@
+{
+  "name": "बामरला ग्राम डिजिटल पोर्टल | Bamarla Village Digital Portal",
+  "description": "बामरला ग्राम डिजिटल पोर्टल (बाड़मेर, राजस्थान 344704) - स्थानीय प्रशासन, जनप्रतिनिधि, सरकारी योजनाएँ, स्कूल, बैंक, स्वास्थ्य और विकास कार्यों की प्रामाणिक सार्वजनिक जानकारी।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

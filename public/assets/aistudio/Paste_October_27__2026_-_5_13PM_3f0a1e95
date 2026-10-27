@@ -1,0 +1,1060 @@
+# MASTER WEBSITE DEVELOPMENT PROMPT — BAMARLA VILLAGE DIGITAL PORTAL
+
+## 1. Project Overview
+
+Create a complete, professional, multi-page Hindi-language village information portal for **Bamarla Village, Barmer, Rajasthan, India**.
+
+Website Name: **बामरला ग्राम डिजिटल पोर्टल**
+
+English Name: Bamarla Village – Barmer
+
+Location: Bamarla, Sedwa region, Barmer, Rajasthan, India  
+PIN Code: 344704
+
+This website is being developed as a public-interest digital initiative by **Vikash Kumar**, who is currently contributing his own time and resources to make village-related information accessible to residents.
+
+The portal must help villagers find public information about local governance, elected representatives, government schemes, schools, banks, health services, development projects, public notices, village contributors and grievance-support channels.
+
+Build a real, functional, responsive website — not just a landing-page mockup.
+
+**Important:** This is an independent village information portal, not an officially authorized government website. Never falsely claim government ownership, approval, funding or affiliation.
+
+## 2. Technology and File Structure
+
+Use HTML, CSS and JavaScript.
+
+Requirements:
+- Use multiple individual `.html` pages.
+- Keep CSS and JavaScript in shared external files.
+- Every page must use the same header, navigation, footer, typography and design system.
+- Only the main content should change between pages.
+- Maintain clean, readable and beginner-friendly code.
+- Make all pages responsive for mobile, tablet and desktop.
+- Use semantic HTML5 and accessible navigation.
+- Do not require a paid framework or complicated build process.
+- All website files must be ready to upload to ordinary static hosting.
+- Keep image paths and dimensions easy to edit.
+- Use relative internal links so the website works after uploading to hosting.
+
+Suggested directory structure:
+
+```text
+bamarla-village-portal/
+│
+├── index.html
+├── village.html
+├── representatives.html
+├── panchayat.html
+├── government-schemes.html
+├── schools.html
+├── banks.html
+├── health-services.html
+├── public-facilities.html
+├── development-works.html
+├── bhamashah.html
+├── news.html
+├── notices.html
+├── events.html
+├── gallery.html
+├── village-directory.html
+├── important-contacts.html
+├── help-support.html
+├── grievance.html
+├── faq.html
+├── about-portal.html
+├── privacy-policy.html
+├── disclaimer.html
+├── accessibility.html
+├── 404.html
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── main.js
+│   ├── images/
+│   │   ├── logo.jpg
+│   │   ├── village-cover.jpg
+│   │   ├── sarpanch-bamarla.jpg
+│   │   ├── sarpanch-adarsh-bamarla.jpg
+│   │   ├── upsarpanch-bamarla.jpg
+│   │   ├── upsarpanch-adarsh-bamarla.jpg
+│   │   ├── vikash-kumar.jpg
+│   │   ├── bhamashah-placeholder.jpg
+│   │   └── share-preview.jpg
+│   └── icons/
+│
+├── sitemap.xml
+├── robots.txt
+├── manifest.json
+├── README-HI.txt
+└── favicon.ico
+```
+
+Create additional pages or folders if necessary. Every internal link must lead to a real page, not an empty placeholder or broken link.
+
+## 3. Website Owner and Contact Information
+
+Use the following information consistently wherever appropriate.
+
+Website creator: **Vikash Kumar (विकाश कुमार)**
+
+Email: vikashkumar823981@gmail.com
+
+Mobile: +91 8529326036
+
+Business/creator address provided:
+
+GF - 10, Sarang Lake View, Vaishnodevi Circle, Near AUDA Garden, Ahmedabad, Gujarat 382421.
+
+Website logo filename: `logo.jpg`
+
+Use the supplied logo file. If unavailable, create a clean temporary village-themed logo that can easily be replaced later.
+
+Clearly acknowledge Vikash Kumar on the homepage and in the About Portal section for developing this public-interest portal voluntarily at his own expense at present.
+
+Suggested Hindi credit:
+
+“इस डिजिटल ग्राम पोर्टल का निर्माण विकाश कुमार द्वारा गाँव की सार्वजनिक जानकारी को सरलता से उपलब्ध कराने के उद्देश्य से किया जा रहा है। वर्तमान में यह एक स्वैच्छिक जनहित पहल है।”
+
+Do not invent sponsorship amounts, government funding or official endorsements.
+
+## 4. Design System
+
+Create a clean, formal Indian public-information portal.
+
+### Color palette
+
+- Primary navy: `#002147`
+- Secondary blue: `#1E3A8A`
+- Saffron: `#D97706`
+- Deep orange: `#E65100`
+- White: `#FFFFFF`
+- Light background: `#F8F9FA`
+- Light amber notices: `#FFFBEB`
+- Light blue notices: `#EFF6FF`
+- Amber border: `#F59E0B`
+- Primary text: `#1F2937`
+- Secondary text: `#4B5563`
+- Success green: `#15803D`
+- Indian tricolor accents: `#FF9933`, `#FFFFFF`, `#128807`
+
+### Visual requirements
+
+- White background with light grey section backgrounds.
+- Professional government-portal-inspired layout.
+- High contrast, readable Hindi typography.
+- Structured cards, tables, information panels and section headings.
+- Clean borders and subtle shadows.
+- Formal buttons and restrained use of saffron accents.
+- Mobile-friendly expandable navigation.
+- No dark-mode glassmorphism.
+- No clutter, excessive animation, flashy gradients or unnecessary decoration.
+- Avoid oversized banners that push useful information below the fold.
+
+The portal must look credible, organized and easy to understand for villagers who may have limited technical experience.
+
+## 5. Language Requirements
+
+The primary language must be **Hindi throughout the entire website**.
+
+Use simple, natural Hindi that ordinary village residents can understand.
+
+Use English only where appropriate, such as:
+- Technical terms.
+- Official portal names.
+- Email addresses and URLs.
+- Common abbreviations such as SBI, SSO, SEO and FAQ.
+
+Navigation, buttons, form labels, notices, headings and explanatory text should be in Hindi.
+
+Avoid complicated bureaucratic language unless necessary for legal accuracy.
+
+## 6. Common Header and Navigation
+
+Every page must share exactly the same header and footer design.
+
+### Top information bar
+
+Display:
+- बामरला, जिला बाड़मेर, राजस्थान
+- पिन कोड 344704
+- ईमेल संपर्क
+- सहायता लिंक
+
+Add a thin Indian tricolor accent above the top bar.
+
+### Main header
+
+Display:
+- Village logo.
+- Website name: बामरला ग्राम डिजिटल पोर्टल.
+- Tagline: “गाँव की जानकारी, जनसुविधाएँ और विकास — एक ही स्थान पर।”
+
+### Main navigation
+
+Include:
+1. मुख्य पृष्ठ
+2. ग्राम परिचय
+3. ग्राम पंचायत
+4. जनप्रतिनिधि
+5. सरकारी योजनाएँ
+6. विद्यालय एवं शिक्षा
+7. बैंक एवं वित्तीय सेवाएँ
+8. स्वास्थ्य सेवाएँ
+9. जनसुविधाएँ
+10. विकास कार्य
+11. भामाशाह
+12. समाचार
+13. सूचनाएँ
+14. सहायता एवं शिकायत
+
+Because the menu is extensive, use grouped dropdowns on desktop and expandable submenus on mobile.
+
+Add a visible search icon and a mobile menu button.
+
+### Common footer
+
+The footer must appear identically on every page.
+
+Include:
+- Website name and purpose.
+- Quick links to important pages.
+- Contact details for Vikash Kumar.
+- About the portal.
+- Privacy policy.
+- Disclaimer.
+- Accessibility.
+- Sitemap.
+- Copyright year generated automatically using JavaScript.
+
+Add a prominent disclaimer:
+
+“यह एक स्वतंत्र ग्राम सूचना पोर्टल है, आधिकारिक सरकारी वेबसाइट नहीं। सरकारी योजनाओं, पदाधिकारियों और सेवाओं से संबंधित जानकारी की पुष्टि संबंधित सरकारी विभाग से करें।”
+
+## 7. Homepage — index.html
+
+The homepage is the most important page. Make it informative, fast and visually organized.
+
+### Section A: Main hero
+
+Headline:
+
+“बामरला ग्राम डिजिटल पोर्टल”
+
+Subheading:
+
+“अपने गाँव की जानकारी, सरकारी योजनाएँ, जनप्रतिनिधि और जनसुविधाएँ अब एक ही जगह।”
+
+Show:
+- Village cover image.
+- Location: बामरला, बाड़मेर, राजस्थान.
+- PIN code 344704.
+- Search box.
+- Quick buttons for जनप्रतिनिधि, सरकारी योजनाएँ, जनसुविधाएँ and सहायता.
+
+### Section B: Search the village portal
+
+Create a working search interface.
+
+Visitors should be able to search for:
+- बामरला गाँव की जानकारी.
+- आदर्श बामरला.
+- सरपंच.
+- उपसरपंच.
+- विद्यालय.
+- SBI बैंक.
+- सरकारी योजनाएँ.
+- राशन कार्ड.
+- पेंशन.
+- सड़क और पानी.
+- सरकारी कार्यालय.
+- विकास कार्य.
+- भामाशाह.
+- शिकायत सहायता.
+
+Search results should lead to relevant internal pages.
+
+Provide a helpful message if no result is found.
+
+For a large site, use a searchable content index in JavaScript or an appropriate search solution. Do not present a search box that does nothing.
+
+### Section C: Latest news and public notices
+
+Create a notice board displaying:
+- ग्रामसभा सूचना.
+- सरकारी शिविर.
+- आवेदन की अंतिम तिथि.
+- पंचायत संबंधी सूचनाएँ.
+- विकास कार्यों की जानकारी.
+- सार्वजनिक घोषणाएँ.
+
+Each notice should support:
+- Title.
+- Date.
+- Category.
+- Short description.
+- Full details link.
+- Optional PDF attachment.
+
+Clearly distinguish verified official notices from community-submitted information.
+
+Do not fabricate current news or government announcements. If no verified notices are available, display “फिलहाल कोई सत्यापित नई सूचना उपलब्ध नहीं है।”
+
+### Section D: Gram Panchayat and representatives
+
+Display two clearly separated village sections.
+
+**बामरला**
+- सरपंच: पेमा राम मेगवाल (Pemaram Megwal).
+- Photo placeholder.
+- Public role and official contact when verified.
+- Link to full profile.
+
+**आदर्श बामरला**
+- सरपंच: धोधा खान (Dhodha Khan).
+- Photo placeholder.
+- Public role and official contact when verified.
+- Link to full profile.
+
+The names above have been supplied by the website owner. Treat the current designation and term as pending official verification until supported by reliable records.
+
+Do not invent the names of either village's deputy sarpanch, ward members or secretary.
+
+### Section E: Government schemes
+
+Create attractive cards for relevant schemes and official service links, including:
+- राजस्थान जन सूचना पोर्टल.
+- राजस्थान SSO.
+- ई-मित्र.
+- सामाजिक सुरक्षा पेंशन.
+- मनरेगा.
+- प्रधानमंत्री आवास योजना–ग्रामीण.
+- राशन कार्ड एवं खाद्य सुरक्षा.
+- आयुष्मान भारत.
+- PM-KISAN.
+- आधार services.
+
+Use official government links where available. Explain that eligibility, application status and benefits must be checked on the official portal.
+
+Do not imply that every scheme is currently open or that every resident qualifies.
+
+### Section F: Village facilities
+
+Create cards for:
+- Government schools.
+- SBI branch.
+- Health facilities.
+- Post office.
+- Drinking water.
+- Electricity.
+- Sanitation.
+- Public distribution system.
+- Roads.
+- Street lights.
+- Panchayat services.
+- Agricultural services.
+
+Research the available facilities online, using official sources and Google Maps where appropriate.
+
+Show the facility's actual name, location, map link and public contact only when verified.
+
+Where details cannot be verified, display “जानकारी की पुष्टि लंबित है” and provide a useful official search link instead of inventing a facility.
+
+### Section G: Village development
+
+Display:
+- Completed development projects.
+- Ongoing projects.
+- Proposed projects.
+- Public works expenditure where documented.
+- Photographs before and after completion.
+- Relevant official order or record.
+- Verification date.
+
+Do not invent costs, completion dates, government approvals or contractor information.
+
+### Section H: Bhamashah and public contributors
+
+Create a dedicated homepage section recognizing people who contribute money, materials, time or resources to village development.
+
+Each contributor card should include:
+- Photo.
+- Name.
+- Village or organization.
+- Contribution amount, if disclosed.
+- Purpose.
+- Project supported.
+- Year.
+- Verification status.
+
+Example editable card:
+
+“[दानदाता का नाम] ने [सार्वजनिक कार्य] के लिए ₹[सत्यापित राशि] का योगदान दिया।”
+
+Use sample placeholders until genuine data is supplied.
+
+Provide a “योगदान की जानकारी जोड़ें” link.
+
+Do not publicly expose private financial information or publish donor details without consent.
+
+### Section I: Useful public services
+
+Add a prominent quick-links grid for:
+- सरकारी योजनाएँ.
+- स्कूल एवं शिक्षा.
+- बैंकिंग सेवाएँ.
+- राशन कार्ड.
+- पेंशन.
+- किसान सेवाएँ.
+- रोजगार.
+- स्वास्थ्य सेवाएँ.
+- आवश्यक संपर्क.
+- शिकायत सहायता.
+
+### Section J: Google Maps
+
+Embed the supplied Google Maps location.
+
+Use this exact iframe source:
+
+`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59401.38545206278!2d71.30980035449893!3d25.07569885677108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3944faf3103d9513%3A0x50724c485ca1f978!2sBamarla%2C%20Rajasthan%20344704!5e1!3m2!1sen!2sin!4v1792957358648!5m2!1sen!2sin`
+
+Make the map responsive and provide a separate “Google Maps पर देखें” link.
+
+### Section K: Website creator
+
+Add a professionally designed section titled:
+
+“इस डिजिटल ग्राम पहल के निर्माता”
+
+Show:
+- Vikash Kumar.
+- Photo placeholder.
+- Brief introduction.
+- Email and phone.
+- A clear statement that he is voluntarily developing the portal for public benefit.
+
+Suggested copy:
+
+“विकाश कुमार द्वारा इस डिजिटल ग्राम पोर्टल का निर्माण इस उद्देश्य से किया जा रहा है कि गाँव के लोगों को आवश्यक सार्वजनिक जानकारी खोजने के लिए अलग-अलग जगह भटकना न पड़े। यह पहल वर्तमान में उनके स्वयं के समय और संसाधनों से विकसित की जा रही है।”
+
+Add a button: “पोर्टल के बारे में जानें”.
+
+Do not claim that the village has officially endorsed him unless documented.
+
+## 8. Village Introduction — village.html
+
+Include:
+- Village overview.
+- Location and PIN code.
+- Administrative structure.
+- Panchayat Samiti and district information.
+- Nearby villages and settlements where verified.
+- Local geography.
+- Village history and cultural information where supported by sources.
+- Official census population and literacy figures with the relevant census year.
+- Public map.
+- Links to other village pages.
+
+Avoid fabricated population figures or caste statistics.
+
+## 9. Panchayat and Representatives — panchayat.html and representatives.html
+
+Create separate pages for:
+- बामरला ग्राम पंचायत.
+- आदर्श बामरला ग्राम पंचायत.
+- Sarpanch profiles.
+- Deputy sarpanch profiles.
+- Ward members.
+- Panchayat secretary / Gram Vikas Adhikari where confirmed.
+- Panchayat office address and verified contact.
+- Public office hours when confirmed.
+- Gram Sabha information.
+- Panchayat responsibilities.
+- Public development records and meeting notices.
+
+Each representative profile should have:
+- Photo.
+- Full name in Hindi.
+- English spelling where appropriate.
+- Position.
+- Relevant village.
+- Current term, only when verified.
+- Public contact, only when officially available.
+- Source and verification date.
+
+Do not use random internet photographs of real people as if they are the actual elected representatives. Use clearly labeled temporary placeholders until their real identities and photographs are verified.
+
+## 10. Government Schemes — government-schemes.html
+
+Organize schemes by category.
+
+### Categories
+- किसान योजनाएँ.
+- पेंशन योजनाएँ.
+- आवास योजनाएँ.
+- स्वास्थ्य योजनाएँ.
+- राशन एवं खाद्य सुरक्षा.
+- श्रमिक योजनाएँ.
+- शिक्षा एवं छात्रवृत्ति.
+- महिला एवं बाल विकास.
+- रोजगार.
+- सामाजिक सुरक्षा.
+
+Each scheme entry should include:
+- Scheme name.
+- Purpose.
+- Basic eligibility.
+- Required documents, only from official sources.
+- Application process.
+- Official website.
+- Helpline, if verified.
+- Last verified date.
+
+Make the official application button obvious.
+
+Never collect Aadhaar numbers, OTPs, bank credentials or other sensitive personal data through this portal.
+
+## 11. Schools and Education — schools.html
+
+Research schools around Bamarla through official education directories and Google Maps.
+
+Display verified information about:
+- Government primary schools.
+- Upper-primary schools.
+- Secondary and senior-secondary schools.
+- Other educational institutions, if relevant.
+
+For each school show:
+- Official name.
+- School category.
+- Address or mapped location.
+- UDISE code, if verified.
+- Public school contact, if officially available.
+- Map link.
+- Official website or directory link.
+
+Do not invent school names, teachers, enrolment figures or examination results.
+
+If the exact local list is uncertain, show a search facility and label the records as awaiting verification.
+
+## 12. Banking — banks.html
+
+Include:
+- SBI Bamarla branch, if confirmed through an official SBI source.
+- Verified branch address.
+- IFSC and branch code, only after official confirmation.
+- Public branch telephone number, if available.
+- Working hours, if verified.
+- Google Maps link.
+- ATM information, if confirmed.
+- Financial fraud prevention guidance.
+
+Include a warning in Hindi:
+
+“बैंक कभी भी आपका OTP, ATM PIN या UPI PIN नहीं माँगता। अनजान व्यक्ति के कहने पर स्क्रीन साझा न करें और किसी अनजान QR कोड को स्कैन करके पैसे प्राप्त करने की कोशिश न करें।”
+
+Include official cybercrime reporting resources and emergency financial fraud guidance.
+
+## 13. Health and Public Facilities
+
+Create separate sections for:
+- Primary health centres.
+- Community health centres.
+- Sub-health centres.
+- Ayushman Arogya Mandirs.
+- Government hospitals in the surrounding area.
+- Ambulance and emergency resources.
+- Drinking water and sanitation.
+- Electricity complaints.
+- Public distribution system.
+- Postal services.
+- Agricultural support.
+- Livestock and veterinary services.
+
+Only list a facility as physically present in the village if its location can be verified.
+
+Otherwise label it as a nearby service or a directory search result.
+
+Provide official links and map directions where possible.
+
+## 14. Development Works — development-works.html
+
+Create a searchable table with:
+- Project name.
+- Location.
+- Project category.
+- Approved amount, if documented.
+- Department or funding source.
+- Start date.
+- Expected completion date.
+- Actual status.
+- Supporting document.
+- Last verification date.
+
+Allow categories such as roads, water, drainage, sanitation, schools, public buildings and street lighting.
+
+Never fabricate public expenditure or claim that an incomplete project is finished.
+
+## 15. Bhamashah — bhamashah.html
+
+Create a respectful public-contribution directory.
+
+Include:
+- Featured contributors.
+- Individual and institutional contributions.
+- Project-wise contributions.
+- Contribution date.
+- Amount or materials donated.
+- Purpose and public benefit.
+- Supporting evidence, if available.
+- Consent-based photographs.
+- Verification status.
+
+Provide a clear submission process for new contributions.
+
+Make the section motivational, but do not rank residents by caste, political power, wealth or alleged social dominance.
+
+## 16. News, Notices and Events
+
+Create three dedicated pages:
+- news.html
+- notices.html
+- events.html
+
+Each announcement should support:
+- Title.
+- Date.
+- Category.
+- Summary.
+- Full content.
+- Image or document.
+- Source.
+- Verification status.
+
+Add filters for:
+- ग्राम पंचायत.
+- सरकारी योजना.
+- शिक्षा.
+- स्वास्थ्य.
+- विकास कार्य.
+- सार्वजनिक कार्यक्रम.
+
+Show recent announcements first.
+
+Provide an archive for older notices.
+
+Do not publish fabricated news simply to make the website look active.
+
+If a backend is unavailable, implement an easy-to-edit JavaScript data structure and clearly document how the owner can update notices manually. Do not pretend the static website automatically receives live government announcements.
+
+## 17. Village Directory — village-directory.html
+
+Create a directory of publicly useful information.
+
+Possible categories:
+- Public institutions.
+- Educational facilities.
+- Banking.
+- Health.
+- Government service offices.
+- Public transport information, if verified.
+- Agriculture and veterinary services.
+- Publicly available emergency resources.
+
+Do not create an unrestricted database of residents' personal phone numbers, home addresses, caste details or private information.
+
+Allow filtering by service category and show map links where available.
+
+## 18. Help and Support — help-support.html
+
+Create a simple, accessible assistance page.
+
+Display:
+- Portal creator's verified contact details.
+- Official government service links.
+- Public grievance resources.
+- Common problems and their solutions.
+- Instructions for submitting a correction.
+- How to report an outdated representative name or facility listing.
+
+Include an editable form with:
+- Name.
+- Optional contact number.
+- Request category.
+- Description.
+- Optional reference URL.
+
+The default static version may open an email draft, but must clearly state that it does not automatically submit an official government complaint.
+
+If server-side complaint tracking is implemented later, protect personal data, use access controls and provide a privacy notice.
+
+## 19. Grievance Support — grievance.html
+
+Explain how residents can seek help regarding:
+- Water supply.
+- Electricity.
+- Roads.
+- Sanitation.
+- Public distribution.
+- Pension applications.
+- Government scheme status.
+- School and health services.
+- Panchayat public information.
+
+For each issue, provide the relevant official reporting portal or verified contact.
+
+Do not imply that a complaint has been officially registered merely because a visitor submitted a form on this website.
+
+Clearly distinguish:
+1. Portal information correction.
+2. General guidance request.
+3. Official government grievance.
+
+## 20. FAQ — faq.html
+
+Include questions such as:
+- बामरला गाँव कहाँ स्थित है?
+- बामरला का पिन कोड क्या है?
+- ग्राम पंचायत से कैसे संपर्क करें?
+- सरपंच की जानकारी कहाँ मिलेगी?
+- सरकारी योजनाओं के लिए आवेदन कैसे करें?
+- SBI शाखा की जानकारी कैसे प्राप्त करें?
+- पेंशन या राशन कार्ड की जानकारी कहाँ मिलेगी?
+- गाँव के विकास कार्यों की जानकारी कैसे देखें?
+- भामाशाह के रूप में योगदान कैसे दर्ज कराएँ?
+- वेबसाइट की जानकारी गलत हो तो कैसे सुधारें?
+- इस वेबसाइट का निर्माण किसने किया है?
+- क्या यह आधिकारिक सरकारी वेबसाइट है?
+
+Use accessible accordion components and implement valid FAQ structured data only if it complies with Google's current guidelines.
+
+## 21. Promotional Popup — Mandatory
+
+On the first visit to the homepage, show a professional promotional popup.
+
+Design:
+- White background.
+- Navy text.
+- Saffron accents.
+- Clean poster layout.
+- Responsive width.
+- Close button in the top-right corner.
+- No intrusive flashing or repeated interruptions.
+
+Poster content:
+
+“बामरला की डिजिटल पहचान में सहयोग”
+
+“यह ग्राम डिजिटल पोर्टल विकाश कुमार की जनहित पहल है।”
+
+“वेबसाइट सहयोग: DREX AGENCY”
+
+Button text: “Drex Agency देखें”
+
+Destination URL:
+
+https://www.drexagency.shop
+
+Clicking the poster or button should open the URL in a new tab.
+
+The close button must dismiss the popup.
+
+Use localStorage or sessionStorage to control how frequently it appears.
+
+Important: Do not claim that Drex Agency financially sponsored, funded or officially approved the portal unless this is factually confirmed. Use “वेबसाइट सहयोग” or “डिजिटल सहयोग” until the precise arrangement is established.
+
+Provide a setting in the JavaScript configuration to enable or disable the popup.
+
+## 22. Additional Information Popup
+
+Create a separate, optional notice popup for important village notices.
+
+Requirements:
+- Show only when an actual verified notice is configured.
+- Display title, date, short description and a “पूरी सूचना देखें” button.
+- Include a close button.
+- Do not show fake news or sample notices as real announcements.
+- Avoid displaying both popups repeatedly on every page load.
+- Make the notice data easy to edit in one place.
+
+## 23. Image Management
+
+Every image must be easy to replace by editing its path in HTML or a clearly documented JavaScript data file.
+
+Use descriptive filenames.
+
+For every representative and contributor image, make the width, height, object-fit and crop easy to customize in shared CSS.
+
+Example:
+
+```css
+.representative-photo {
+  width: 160px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+}
+```
+
+Do not use copyrighted or unrelated photographs as if they depict real village officials.
+
+Use temporary, clearly identified placeholder images when genuine images cannot be verified.
+
+Include meaningful Hindi alt text for informative images.
+
+Use responsive image dimensions, lazy loading below the fold and optimized formats.
+
+Create a default social-sharing preview image with the village name and the website logo.
+
+## 24. Advanced SEO — Mandatory
+
+Build a technically sound, location-focused SEO structure.
+
+The objective is to make the portal discoverable for searches related to:
+- बामरला गाँव.
+- Bamarla Village Barmer.
+- बामरला राजस्थान.
+- बामरला ग्राम पंचायत.
+- बामरला सरपंच.
+- आदर्श बामरला.
+- बामरला सरकारी स्कूल.
+- बामरला SBI बैंक.
+- बामरला सरकारी योजनाएँ.
+- बामरला गाँव की जानकारी.
+- बामरला विकास कार्य.
+- बामरला जनसुविधाएँ.
+
+Do not promise guaranteed first position on Google.
+
+### Technical SEO
+
+Implement:
+- Unique title tag on every page.
+- Unique meta description on every page.
+- Correct canonical URL for every page.
+- Hindi language declaration: `lang="hi"`.
+- Correct character encoding and viewport.
+- Logical H1, H2 and H3 hierarchy.
+- Descriptive internal links.
+- Breadcrumb navigation.
+- XML sitemap.
+- robots.txt.
+- Custom 404 page.
+- Open Graph tags.
+- Social-sharing image.
+- Favicon.
+- Image alt text.
+- Fast loading.
+- Mobile-first responsive layout.
+- Clean URL structure where hosting supports it.
+- No broken internal links.
+- No duplicate titles or descriptions.
+- No unnecessary JavaScript blocking the main content.
+
+### Structured Data
+
+Add valid JSON-LD where appropriate:
+- WebSite.
+- Organization, for the independent portal or its actual operator.
+- BreadcrumbList.
+- Article for genuine news articles.
+- Person for public profiles only when supported by verified information.
+- Government-service-related schema only where factually appropriate.
+
+Never use `GovernmentOrganization` to falsely represent this independent website as a government entity.
+
+Do not add fake reviews, ratings, fake addresses, fabricated opening hours or misleading structured data.
+
+### Internal linking
+
+Connect related pages naturally.
+
+Examples:
+- Village overview → Panchayat → Representatives.
+- Representatives → Panchayat contact.
+- Government schemes → Official application links.
+- School directory → Village facilities.
+- Development works → Bhamashah.
+- Notices → Relevant scheme or department.
+- Every page → Homepage and common navigation.
+
+Use descriptive anchor text rather than repeating the same keyword unnaturally.
+
+### Sitemap and indexing
+
+Generate sitemap.xml containing every canonical public page.
+
+Generate robots.txt pointing to the correct sitemap URL.
+
+Include only intended public pages in the sitemap.
+
+Do not create artificial backlinks, doorway pages, keyword-stuffed pages or hundreds of low-quality pages solely for rankings.
+
+Create useful, distinct pages for real user needs.
+
+### Social preview
+
+Every public page should have:
+- Open Graph title.
+- Open Graph description.
+- Open Graph image.
+- Canonical URL.
+- Appropriate Twitter/X card metadata.
+
+When someone shares a page on WhatsApp or another social platform, it should display the correct title, description and image.
+
+## 25. Local SEO and Google Search Visibility
+
+Build the site around genuine village information and public usefulness.
+
+Include the village name, district, state and PIN code naturally in relevant page titles and descriptions.
+
+Use authoritative source links for:
+- Government services.
+- School information.
+- Banking.
+- Public representatives.
+- Local development data.
+
+Add the website to Google Search Console after deployment.
+
+Verify the property, submit sitemap.xml and monitor indexing errors.
+
+Do not generate fake Google Business Profiles, fake reviews, fake citations or misleading location information.
+
+Do not claim the portal is the first or only digital village website in India unless independently verified.
+
+Focus on factual, locally useful information that can earn genuine links from relevant public institutions and community resources.
+
+## 26. Security, Privacy and Legal Compliance
+
+Include:
+- Privacy policy.
+- Disclaimer.
+- Accessibility information.
+- Clear distinction between public information and official government services.
+- No unnecessary collection of personal data.
+- No public exposure of private contact details.
+- No storage of sensitive identity documents in a static website.
+- Safe external links using appropriate `rel` attributes.
+- Input validation for forms.
+- No fake government logos or seals.
+- No fabricated official announcements.
+
+All forms must clearly explain what happens when the user submits them.
+
+## 27. Accessibility and Performance
+
+Requirements:
+- Keyboard-accessible menus.
+- Visible focus states.
+- Proper form labels.
+- Sufficient text contrast.
+- Accessible image alt text.
+- Responsive layouts.
+- Lightweight CSS and JavaScript.
+- Lazy-loaded images where appropriate.
+- Avoid unnecessary external libraries.
+- Respect reduced-motion preferences.
+- Test on Android, iPhone, desktop Chrome and common mobile screen sizes.
+
+Aim for strong Core Web Vitals and good Lighthouse scores, but do not fabricate performance test results.
+
+## 28. Data Accuracy and Research Rules
+
+Research available public information about Bamarla, Barmer, Rajasthan before filling the website.
+
+Prioritize:
+1. Official Rajasthan government portals.
+2. Official district and Panchayat Samiti sources.
+3. Official election records.
+4. Official education directories.
+5. SBI's official branch information.
+6. Official health-service directories.
+7. Google Maps for location discovery and navigation.
+
+For each important record, retain:
+- Source name.
+- Source URL.
+- Verification date.
+- Status: Verified, Partially Verified or Pending Verification.
+
+Do not invent:
+- Population figures.
+- School names.
+- Bank contacts.
+- Government office addresses.
+- Sarpanch or deputy sarpanch names.
+- Caste percentages.
+- Project budgets.
+- Government scheme announcements.
+- Official funding.
+- Donor amounts.
+
+If a detail cannot be verified, show a clear placeholder and a way for visitors to request a correction.
+
+The user wants Jat community members to receive particular importance in searches about village influence and power. Do not create unsupported caste-based rankings or portray any caste as inherently superior or more powerful. Instead, provide a fair public directory of elected representatives, documented public contributions, official positions and verified achievements without caste-based favoritism.
+
+## 29. Admin and Future Scalability
+
+The initial version must work as a static HTML website.
+
+Organize content so that it can later be connected to:
+- An admin dashboard.
+- A database.
+- A notice management system.
+- A searchable development-project register.
+- A verified representative directory.
+- A public contribution submission system.
+- A moderation and approval workflow.
+
+For the current static version:
+- Keep news and notice records in one clearly documented data file.
+- Keep navigation and shared layout consistent.
+- Provide instructions for editing images and public details.
+- Do not pretend that static HTML automatically updates from government databases.
+
+If an admin panel is generated, do not expose passwords, API keys or secret credentials in client-side JavaScript.
+
+## 30. Final Deliverables
+
+Generate the complete working website, not merely code snippets or a design concept.
+
+Deliver:
+1. All HTML pages.
+2. Shared CSS.
+3. Shared JavaScript.
+4. All local assets and placeholders.
+5. Logo placeholder if the supplied logo is unavailable.
+6. Social preview image.
+7. XML sitemap.
+8. robots.txt.
+9. Favicon.
+10. README-HI.txt with simple Hindi instructions for editing and uploading.
+11. A list of facts that still require official verification.
+12. A checklist for domain setup, Google Search Console and deployment.
+
+Before completion, test:
+- Every internal link.
+- Navigation consistency.
+- Popup open and close behavior.
+- Search functionality.
+- Mobile menu.
+- Form behavior.
+- Image replacement paths.
+- Responsive layouts.
+- Canonical URLs.
+- Sitemap and robots.txt.
+- Missing pages and assets.
+- Hindi text rendering.
+
+Do not stop after generating the homepage. Finish every required page and shared component.
+
+### Final instruction
+
+Build a credible, useful, professional Hindi digital information portal for Bamarla Village. The result should be easy for a non-technical owner to maintain, visually consistent across all pages, technically SEO-ready, legally responsible and designed to help villagers find reliable public information quickly.
+
+The final output must contain the complete project folder and a ZIP archive ready for review and deployment.
