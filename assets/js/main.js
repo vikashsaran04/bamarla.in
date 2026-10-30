@@ -331,10 +331,10 @@ function showPromotionalModal() {
     modalOverlay.innerHTML = `
       <div class="portal-modal" role="dialog" aria-modal="true" aria-labelledby="promoTitle" style="max-width: 540px; width: 95%; max-height: 90vh; overflow-y: auto;">
         <button class="modal-close-btn" id="closePromoBtn" aria-label="बंद करें" style="position: absolute; top: 10px; right: 10px; z-index: 20; background: #FFFFFF; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">&times;</button>
-        <div class="modal-body" style="padding: 1.5rem 1.25rem; text-align: center;">
+        <div class="modal-body" style="padding: 0.5rem 0.25rem; text-align: center;">
           
           <!-- Supplied Poster Display (Requirement 4) -->
-          <div style="background: #00152F; border-radius: 8px; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #F59E0B;">
+          <div style="background: #ffffff; border-radius: 8px; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #0b69f5;">
             <img 
               src="${PORTAL_CONFIG.welcomePosterUrl}" 
               alt="बामरला ग्राम डिजिटल पोर्टल स्वागत पोस्टर" 
@@ -349,26 +349,7 @@ function showPromotionalModal() {
             </div>
           </div>
 
-          <h3 id="promoTitle" style="font-size: 1.3rem; font-weight: 800; color: #002147; margin-bottom: 0.4rem; line-height: 1.3;">
-            बामरला की डिजिटल पहचान में सहयोग
-          </h3>
-          <p style="font-size: 0.925rem; color: #4B5563; margin-bottom: 0.6rem; line-height: 1.5;">
-            यह ग्राम डिजिटल पोर्टल <strong>विकाश कुमार</strong> की एक स्वैच्छिक जनहित पहल है।
-          </p>
-          <div style="background: #F8FAFC; border: 1px dashed #CBD5E1; padding: 0.6rem 0.75rem; border-radius: 6px; margin-bottom: 1rem;">
-            <span style="font-size: 0.875rem; color: #1E3A8A; font-weight: 600;">
-              वेबसाइट सहयोग: DREX AGENCY
-            </span>
-          </div>
 
-          <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
-            <a href="https://www.drexagency.shop" target="_blank" rel="noopener noreferrer" class="btn btn-saffron btn-sm" style="padding: 0.6rem 1.4rem;">
-              Drex Agency देखें &rarr;
-            </a>
-            <button id="dismissPromoBtn" class="btn btn-outline btn-sm" style="padding: 0.6rem 1.2rem;">
-              पोर्टल में प्रवेश करें
-            </button>
-          </div>
           <div style="margin-top: 0.75rem; font-size: 0.75rem; color: #94A3B8;">
             * यह पोर्टल स्वतंत्र नागरिक सूचना मंच है, आधिकारिक सरकारी वेबसाइट नहीं।
           </div>
