@@ -16,7 +16,7 @@ const PORTAL_CONFIG = {
   pinCode: "344704",
   villageAddress: "BAMARLA, BARMER, RAJASTHAN, भारत · PIN Code: 344704",
   officialLogoUrl: "https://www.bamarla.in/logo.png",
-  welcomePosterUrl: "https://m.media-amazon.com/images/I/71WKa4pvvlL._AC_UF894,1000_QL80_.jpg",
+  welcomePosterUrl: "https://www.bamarla.in/assets/images/Adforbamarla.jpg",
   
   // Section 21 & Update 4: Welcome / Promotional Popup Settings
   showPromotionalPopup: true,
